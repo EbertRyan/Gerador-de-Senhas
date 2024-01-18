@@ -1,0 +1,282 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #cdd7e418;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:#222437;
+}
+.border{
+    background-color: #18457f18;
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 30px;
+}
+.title-first h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+}
+.title-first h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #0174FB;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.options h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    
+}
+
+label {
+    display: block;
+    padding-left: 4.4rem;
+    position: relative;
+  }
+  
+  input[type=checkbox] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+.custom-checkbox {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    top: 2px;
+    margin-left: -45px;
+    
+    height: 1rem;
+    width: 2rem;
+    border: 2px solid #222437;
+    cursor: pointer;
+  }
+
+  .custom-checkbox:hover {
+    border-color:#0174FB;
+  }
+  
+  input[type=checkbox]:checked ~ .custom-checkbox {
+    border-color:#222437;
+    background-color:#0174FB ;
+  }
+  
+.password-input{
+    margin-top: 45px;
+    max-width: 450px;
+    margin-bottom: 20px;    
+}
+
+.container-input span{
+    color: white;
+    font-size: 15px;
+  
+}
+
+.slider{
+    border-radius: 5px;
+    background-color: antiquewhite;
+   
+}
+.button-cta{
+    height: 40px;
+    background-color:#18457f18;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color:#222437;
+}
+
+.container-password{
+    max-width: 450px;
+    
+}
+
+.title{
+    text-align: center;
+    color: #222437;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    
+}
+
+.password{
+    height: 60px;
+    background-color:white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: black;
+    border: 1px solid #18447F;
+    transition: transform 0.5s;
+    margin-bottom: 40px;
+}
+
+.password:hover{
+    transform: scale(1.05);
+    
+}
+.tooltip{
+    position: relative;
+    top: -17px;
+    padding: 6px 8px;
+    background:#18457f18;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.hide{
+    display: none;
+}
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+@media (max-width: 767px){
+    .border{
+        background-color:#18457f18;
+        border-radius: 10px;
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    .options h2{
+       font-size: 15px;
+        
+    }
+
+   .password-input {
+   padding-left: 8px;
+   }
+
+   .password-input .slider{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .password-input .button-cta{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+   }
+
+   .title{
+    margin-left: 5px;
+    
+   }
+   .password{
+    width: 270px;
+   }
+
+   .tooltip{
+    width: 280px;
+    }
+
+    @media (max-width: 767px) {
+        body {
+            background-color: #cdd7e4;
+        }
+    
+        .border {
+            width: 90%;
+            margin: 30px auto;
+        }
+    
+        .options h2 {
+            font-size: 18px;
+        }
+    
+        .input-container {
+            max-width: 90%;
+            margin: 45px auto 20px;
+            padding-left: 8px;
+        }
+    
+        .slider,
+        .button-cta {
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .title {
+            text-align: left;
+            margin-left: 10px;
+        }
+    
+        .password {
+            width: 90%;
+            margin: 0 auto 40px;
+        }
+    
+        .tooltip {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .border {
+            width: 95%;
+        }
+    
+        .options h2,
+        .title-first h1 {
+            font-size: 16px;
+        }
+    
+        .title-first h2,
+        .options h2,
+        .title {
+            margin-bottom: 1rem;
+        }
+    
+        .input-container {
+            margin-top: 30px;
+        }
+    
+        .button-cta {
+            font-size: 16px;
+        }
+    }
+
+    
+}
